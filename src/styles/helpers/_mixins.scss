@@ -1,0 +1,10 @@
+
+@mixin viewport-phone {
+  @media (max-width: 420px) { @content; }
+}
+@mixin viewport-tablet {
+  @media (max-width: 815px) { @content; }
+}
+@mixin viewport-desktop {
+  @media (max-width: 1024px) { @content; }
+}

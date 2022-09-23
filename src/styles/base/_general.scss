@@ -1,0 +1,56 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  color: var(--color-text-black);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.16;
+  font-weight: 700;
+}
+
+.link {
+  font-size: 1rem;
+  line-height: 1.18;
+  color: var(--color-blue);
+  transition: all .3 ease;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.18;
+  color: var(--color-text-black);
+}
+
+.text--gray {
+  color: var(--color-gray-1);
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @include viewport-tablet { 
+    padding: 0 15px;
+  }
+}
+
+.wrapper--s {
+  max-width: 384px;
+}

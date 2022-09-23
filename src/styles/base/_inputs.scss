@@ -1,0 +1,50 @@
+
+.input {
+  position: relative;
+}
+
+.input__value {
+  height: var(--input-height);
+  width: 100%;
+  padding: 17px 23px;
+  font-size: 1rem;
+  line-height: 1;
+  border: 1px solid var(--color-gray-1);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: .3s ease;
+
+  &::placeholder {
+    color: var(--color-gray-3);
+    transition: .3s ease;
+  }
+
+  &:focus { 
+    border: 1px solid var(--color-blue);
+
+    &::placeholder {
+      color: var(--color-blue);
+    }
+
+    &+ .input__ico {
+      fill: var(--color-blue);
+    }
+  }
+}
+
+.input--with-icon {
+  .input__value {
+    padding: 17px 23px 17px 46px;
+  }
+}
+
+.input__ico {
+  width: 25px;
+  height: 25px;
+  fill: var(--color-gray-1);
+  transition: .3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+}

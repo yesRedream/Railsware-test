@@ -1,0 +1,34 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--color-blue);
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.btn--red {
+  background-color: var(--color-red);
+}
+
+.btns-group {
+  display: flex;
+
+  .btn {
+    margin-right: 14px;
+    flex: 1;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
